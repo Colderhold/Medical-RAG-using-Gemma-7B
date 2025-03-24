@@ -1,0 +1,8 @@
+models:
+  - type: main
+    engine: gemma
+    model: gemma1.1_medical
+
+rails:
+  input:
+    path: config/rails.xml
