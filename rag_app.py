@@ -236,7 +236,7 @@ if prompt_text:
                 st.write("## 🤖 AI Responses")
                 
                 st.header("📚 RAG-Based Response")
-                st.code(validated_response_text, language="text")
+                st.markdown(f"**🧠 AI Answer:**  \n{validated_response_text}")
 
                 st.subheader("📜 Context")
                 st.code(source_document, language="text")
@@ -245,7 +245,7 @@ if prompt_text:
                 st.code(doc_source, language="text")
 
                 st.header("🧠 LLM Response")
-                st.code(llm_only_response, language="text")
+                st.markdown(f"**🧠 AI Answer:**  \n{llm_only_response}")
 
             else:
                 st.error("❌ Guardrails validation failed.")
